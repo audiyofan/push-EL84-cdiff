@@ -208,9 +208,9 @@ F 3 "~" H 2200 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2400 2200 2250
+	2200 2400 2200 2300
 Wire Wire Line
-	4700 2400 4700 2250
+	4700 2400 4700 2300
 Wire Wire Line
 	4700 2700 4700 2900
 $Comp
@@ -902,4 +902,36 @@ Wire Wire Line
 Connection ~ 2850 4900
 Wire Wire Line
 	2200 4900 2350 4900
+$Comp
+L Connector:TestPoint_Probe TP2
+U 1 1 5F11EDCA
+P 4850 2300
+F 0 "TP2" H 5003 2401 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5003 2310 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5050 2300 50  0001 C CNN
+F 3 "~" H 5050 2300 50  0001 C CNN
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2300 4700 2300
+Connection ~ 4700 2300
+Wire Wire Line
+	4700 2300 4700 2250
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 5F123D95
+P 2050 2300
+F 0 "TP1" V 2340 2355 50  0000 C CNN
+F 1 "TestPoint_Probe" V 2249 2355 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2250 2300 50  0001 C CNN
+F 3 "~" H 2250 2300 50  0001 C CNN
+	1    2050 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 2300 2200 2300
+Connection ~ 2200 2300
+Wire Wire Line
+	2200 2300 2200 2250
 $EndSCHEMATC
